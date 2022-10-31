@@ -62,7 +62,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 //when you change the volume slider
 document.querySelector("#slider").oninput = function(){
 	video.volume = this.value/100;
-	volume.innerHTML = this.value/100;
+	document.querySelector("#volume").innerHTML = this.value/100;
 }
 
 //when you press Original remove the old school class
